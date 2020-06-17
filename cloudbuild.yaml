@@ -27,9 +27,9 @@ steps:
 
 # This step deploys the application in Kubernetes
 - name: 'gcr.io/cloud-builders/gke-deploy'
-args:
-- run
-- --filename=app.yaml
-- --image=gcr.io/$PROJECT_ID/seans-page:$SHORT_SHA
-- --location=us-east1-b
-- --cluster=cluster-1
+  args:
+  - run
+  - --filename=app.yaml
+  - --image=gcr.io/$PROJECT_ID/seans-page:$SHORT_SHA
+  - --location=us-east1-b
+  - --cluster=cluster-1
