@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: seans-page
-        image: gcr.io/potent-galaxy-274115 seans-page
+        image: gcr.io/potent-galaxy-274115/seans-page
         ports:
         - containerPort: 80
         resources:
